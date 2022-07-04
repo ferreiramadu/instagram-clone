@@ -1,0 +1,569 @@
+/*PRINCIPAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'roboto';
+    font-size: 14px
+}
+
+body { 
+    background: #FAFAFA;
+}
+
+a {
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-areas: "image card" "footer footer";
+    grid-row: auto;
+    grid-column: auto;
+}
+/*ESTILIZANDO IMAGEM PRINCIPAL E GIF DA IMAGEM*/
+.image {
+    grid-area: image;
+}
+
+.gif {
+    width: 267.15px;
+    height: 478.84px;
+    margin-left: -285.4px;
+    margin-bottom: 69.9px;
+}
+
+/*ESTILIZANDO CARDS E SESSÃO DE LOGIN*/
+.card {
+    grid-area: card;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.sub-card {
+    text-align: center;
+    width: 350px;
+    height: 339px;
+    display: block;
+    border: 1px solid lightgray;
+}
+
+.sub-card-2 {
+    width: 350px;
+    height: 70px;
+    display: block;
+    text-align: center;
+    border: 1px solid lightgray;
+
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.get-app {
+    margin-top: 20px;
+    display: block;
+    width: 350px;
+    height: auto;
+    text-align: center;
+}
+
+.logo {
+    margin: 22px 86.5px 12px;
+}
+
+.profile {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    width: 204.2px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    
+    color: white;
+    font-weight: medium;
+    background-color: #3897F0;
+
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.label {
+    color: #3897F0;
+}
+
+.image-get {
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+/*ESTILIZANDO O RODAPÉ DO SITE*/
+.footer {
+    grid-area: footer;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.footer-item {
+    color: #8E8E8E;
+    padding-left: 2px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.select {
+    font-family: 'roboto';
+    color: #8e8e8e;
+    border: none;
+    outline: none;
+}
+
+/*RESPONSIVIDADE MOTO G4*/
+@media (max-width: 360px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    .card {
+        margin-left: 0px;
+        margin-top: -20px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+
+    }
+
+    .sub-card {
+        width: 300px;
+    }
+
+    .sub-card-2 {
+        width: 300px;
+    }
+
+    .get-app {
+        width: 300px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+/*RESPONSIVIDADE IPAD MINI*/
+@media (min-width:768px) AND (max-width:768px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-right: 120px;
+    }
+
+    .footer {
+        margin-top: 150px;
+    }
+
+}
+
+/*RESPONSIVIDADE PIXEL 2*/
+@media (min-width: 411px) AND (max-width:411px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+    }
+
+    .footer {
+        display: none;
+    }
+
+
+}
+/*RESPONSIVIDADE PIXEL 2 XL*/
+@media (min-width: 411px) AND (max-width:411px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+    }
+
+    .footer {
+        display: none;
+    }
+
+}
+/*RESPONSIVIDADE IPHONE 5/SE*/
+@media (min-width: 320px) AND (max-width: 320px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .sub-card {
+        width: 250px;
+    }
+
+    .sub-card-2 {
+        width: 250px;
+    }
+
+    .get-app {
+        width: 250px;
+    }
+}
+
+/*RESPONSIVIDADE IPHONE 6/7/8*/
+@media (min-width: 363px) AND (max-width: 399px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+
+    }
+
+    .sub-card {
+        width: 300px;
+    }
+
+    .sub-card-2 {
+        width: 300px;
+    }
+
+    .get-app {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+/*RESPONSIVIDADE IPHONE 6/7/8 PLUS*/
+@media (min-width: 414px) AND (max-width: 414px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+
+    }
+
+    .sub-card {
+        width: 300px;
+    }
+
+    .sub-card-2 {
+        width: 300px;
+    }
+
+    .get-app {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+/*RESPONSIVIDADE SURFACE DUO*/
+@media (min-width: 519px) AND (max-width: 720px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+
+    }
+
+    .sub-card {
+        width: 300px;
+    }
+
+    .sub-card-2 {
+        width: 300px;
+    }
+
+    .get-app {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+/*RESPONSIVIDADE GALAXY FOLD*/
+@media (min-width: 280px) AND (max-width: 280px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .sub-card {
+        width: 250px;
+    }
+
+    .sub-card-2 {
+        width: 250px;
+    }
+
+    .get-app {
+        width: 250px;
+    }
+}
+
+/*RESPONSIVE MODE-MOBILE L */
+@media (min-width: 425px) AND (max-width: 425px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+
+    }
+
+    .sub-card {
+        width: 300px;
+    }
+
+    .sub-card-2 {
+        width: 300px;
+    }
+
+    .get-app {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+@media (min-width: 723px) AND (max-width: 876px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+
+    }
+
+    .sub-card {
+        width: 300px;
+    }
+
+    .sub-card-2 {
+        width: 300px;
+    }
+
+    .get-app {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+@media (min-width: 861px) AND (max-width: 861px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-top: -20px;
+        margin-right: 100px;
+    }
+
+    .get-app {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 420px) AND (max-width: 516px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+
+    }
+
+    .sub-card {
+        width: 300px;
+    }
+
+    .sub-card-2 {
+        width: 300px;
+    }
+
+    .get-app {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+
+@media (min-width: 402px) AND (max-width: 417px) {
+    .image {
+        display: none;
+        visibility: none;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+
+    }
+
+    .sub-card {
+        width: 300px;
+    }
+
+    .sub-card-2 {
+        width: 300px;
+    }
+
+    .get-app {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
