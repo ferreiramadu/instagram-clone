@@ -1,2 +1,6 @@
 # instagram-clone-vue
-Esse programa foi elaborado com o intuito de aprimorar os conhecimentos em Vue.js
+Clone da UI (Login) do instagram
+
+<div align="center">
+  <img src="https://i.imgur.com/aX2el2g.png" alt="Instagram" border="0">
+</div>
